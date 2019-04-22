@@ -12,7 +12,6 @@ power_filtered_df <- filter(power_asdate_df, Date >= "2007-02-01", Date <= "2007
 
 ## Graph
 with(power_filtered_datetime_df, hist(Global_active_power, main = "Global Active Power", xlab = "Global Active Power (kilowatts)", col = "red"))
-##hist(power_filtered_df$Global_active_power, main = "Global Active Power", xlab = "Global Active Power (kilowatts)", col = "orange")
 
 ## Print
 dev.print(device = png, filename = "plot1.png", width = 480, height = 480)

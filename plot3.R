@@ -1,4 +1,5 @@
 library(readr)
+library(dplyr)
 
 ## Read
 power_df <- read_delim("household_power_consumption.txt", ";", escape_double = FALSE, na = "?", trim_ws = TRUE)
